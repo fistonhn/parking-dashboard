@@ -1,0 +1,24 @@
+@import 'src/styles/variables'
+
+.barChart
+  min-width: 400px
+  height: 260px
+
+.tooltip
+  display: flex
+  align-items: center
+  justify-content: center
+  & > span
+    font-size: 10px
+    &:first-child
+      font-weight: 300
+
+@media (min-width: 1200px)
+  .barChart
+    height: 320px
+@media (min-width: 1600px)
+  .barChart
+    height: 450px
+@media (min-width: 1920px)
+  .barChart
+    height: 550px

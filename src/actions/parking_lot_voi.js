@@ -1,0 +1,3 @@
+const SET_LIST = 'SET_PARKING_LOT_VOI_LIST';
+
+export { SET_LIST };

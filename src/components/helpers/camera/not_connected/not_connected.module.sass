@@ -1,0 +1,31 @@
+@import 'src/styles/variables'
+.stream
+    width: 85%
+    height: 360px
+    background-color: #495259
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 25px auto
+.stream>.lock, .stream> .exclamation
+    font-size: 90px
+    height: 360px
+    margin: 0 auto
+    display: flex
+    height: fit-content
+    align-content: center
+
+.stream>.lock
+    color: $green
+.stream> .exclamation
+    color: $danger-color
+
+.noconnection
+    display: flex
+    justify-content: center
+    color: $primary-text-color
+.notallowed
+    display: flex
+    justify-content: center
+    color: $primary-text-color

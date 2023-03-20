@@ -1,0 +1,56 @@
+@import 'src/styles/variables'
+
+.slotPaneWrapper
+  min-width: 190px
+.slotPaneTitle
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 40px
+  padding: 0 30px
+  background-color: $primary-color
+  color: white
+  & > span
+    font-size: 14px
+    font-weight: 300
+.layoutPane
+  padding: 12px 20px !important
+  overflow: auto
+
+.mapContainer
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 2px solid $grey-dark
+  max-width: 885px
+  max-height: 600px
+  height: 885px
+  height: 600px
+  margin-top: 16px
+  overflow: auto
+.emptyImageMap
+  max-height: 700px
+  max-width: 700px
+  height: 700px
+  width: 700px
+.slotContainer
+  height: 100%
+  min-height: 150px
+  max-height: 650px
+  background-color: $grey-light
+.imageMap
+  max-height: 700px
+  max-width: 700px
+  background-repeat: no-repeat
+.followCircle
+  cursor: url(~assets/crosshair.png) 15 10, auto;
+.CircleBarContainer
+  width: 190px
+  max-width: 190px
+  height: 56px
+  max-height: 56px
+  z-index: 100
+
+@media (min-width: 992px)
+  .slotPaneWrapper
+    min-width: 230px

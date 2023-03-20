@@ -1,0 +1,30 @@
+@import 'src/styles/variables'
+
+.modal
+  opacity: 1 !important
+  font-size: 14px !important
+  border-radius: 4px
+  & .modalHeader, .modalBody
+    background-color: $aqua-haze
+  & h5
+    color: $general-text-color
+    font-size: 16px
+    font-weight: normal
+    opacity: 0.9
+  & div
+    border: none !important
+  & input, select
+    color: $general-text-color
+    font-size: 14px
+    opacity: 0.9
+    border: 1px solid rgba($snuff, 0.95)
+.modalHeader
+  position: relative
+  justify-content: center !important
+  padding: 70px 0 40px !important
+  & > button
+    position: absolute
+    top: 25px
+    right: 35px
+.modalBody
+  padding: 0 15% 60px !important

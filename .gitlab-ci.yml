@@ -1,0 +1,102 @@
+image: docker:19.03.1
+
+variables:
+  STG_APP_NAME: telesoft-psad-dashboard
+  STG_URL: https://dashboard.telesoftmobile.com
+  RELEASE_APP_NAME: telesoft-psad-dashboard-release
+  RELEASE_URL: https://dashboard-stable.telesoftmobile.com
+  PROD_URL: https://dashboard.eastonmd.gov
+  PROD_APP_1_NAME: telesoft-psad-dashboard-1
+  PROD_APP_2_NAME: telesoft-psad-dashboard-2
+  GIT_SSL_NO_VERIFY: "true"
+
+before_script:
+  - docker login ${CI_REGISTRY} -u ${CI_REGISTRY_USER} -p ${CI_REGISTRY_PASSWORD}
+
+stg_image_build:
+  environment:
+    name: staging
+    url: ${STG_URL}
+  stage: build
+  script: |-
+    apk add git curl
+    git -C /tmp clone https://${token_username}:${deployed_token}@gitlab.telesoftmobile.com/devops/psad.git
+    cp /tmp/psad/dashboard/conf/stg/.env.js ./src
+    docker build -t telesoftdevops/devops:telesoft-psad-dashboard-stg .
+    docker push telesoftdevops/devops:telesoft-psad-dashboard-stg
+  only:
+    - stg
+
+stg_image_deploy:
+  environment:
+    name: staging
+    url: ${STG_URL}
+  stage: deploy
+  script:
+    - apk add git curl python3
+    - pip3 install requests
+    - echo "Deploy Image"
+    - curl -X PUT "http:/172.31.3.200:8088/deployments/amount/psad_dashboard/stg"
+    - sh ci/stg-deploy.sh ${STG_APP_NAME}
+    - git -C /tmp clone https://${token_username}:${deployed_token}@gitlab.telesoftmobile.com/devops/psad.git
+    - python3 /tmp/psad/update_portainer.py ${STG_APP_NAME}
+  only:
+    - stg
+
+release_image_build:
+  environment:
+    name: release
+    url: ${RELEASE_URL}
+  stage: build
+  script: |-
+    apk add git curl
+    git -C /tmp clone https://${token_username}:${deployed_token}@gitlab.telesoftmobile.com/devops/psad.git
+    cp /tmp/psad/dashboard/conf/release/.env.js ./src
+    docker build -t telesoftdevops/devops:telesoft-psad-dashboard-release .
+    docker push telesoftdevops/devops:telesoft-psad-dashboard-release
+  only:
+    - release
+
+release_image_deploy:
+  environment:
+    name: release
+    url: ${RELEASE_URL}
+  stage: deploy
+  script:
+    - apk add git curl python3
+    - pip3 install requests
+    - echo "Deploy Image"
+    - curl -X PUT "http:/172.31.3.200:8088/deployments/amount/psad_dashboard/release"
+    - sh ci/release-deploy.sh ${RELEASE_APP_NAME}
+    - git -C /tmp clone https://${token_username}:${deployed_token}@gitlab.telesoftmobile.com/devops/psad.git
+    - python3 /tmp/psad/update_portainer.py ${RELEASE_APP_NAME}
+  only:
+    - release
+
+prod_image_build:
+  environment:
+    name: prod
+    url: ${PROD_URL}
+  stage: build
+  script: |-
+    apk add git curl
+    git -C /tmp clone https://${token_username}:${deployed_token}@gitlab.telesoftmobile.com/devops/psad.git
+    cp /tmp/psad/dashboard/conf/prod/.env.js ./src
+    docker build -t telesoftdevops/devops:telesoft-psad-dashboard-prod .
+    docker push telesoftdevops/devops:telesoft-psad-dashboard-prod
+  only:
+    - master
+
+prod_image_deploy:
+  environment:
+    name: prod
+    url: ${PROD_URL}
+  stage: deploy
+  script:
+    - echo "Deploy iamge to PROD"
+    - curl -X PUT "http:/18.142.71.94:8088/deployments/amount/psad_dashboard/master"
+    - sudo ci/prod-deploy.sh ${PROD_APP_1_NAME} ${PROD_APP_2_NAME}
+  only:
+    - master
+  tags:
+    - prod-shell

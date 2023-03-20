@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:12.4
+    volumes:
+      - .:/app:delegated
+      - node_modules:/app/node_modules:delegated
+    working_dir: /app
+    ports:
+      - 3012:3000
+    command: npm start
+
+volumes:
+  node_modules:

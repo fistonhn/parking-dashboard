@@ -1,0 +1,17 @@
+<svg id="calendar_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_803" data-name="Rectangle 803" width="24" height="24" fill="#dbdeec" opacity="0"/>
+  <g id="small-calendar" transform="translate(3.879 3.879)">
+    <g id="calendar_1_">
+      <path id="Path_1364" data-name="Path 1364" d="M14.936,1.528H12.73V.509a.509.509,0,1,0-1.018,0V1.528H8.656V.509a.509.509,0,0,0-1.018,0V1.528H4.583V.509a.509.509,0,0,0-1.018,0V1.528H1.358A1.358,1.358,0,0,0,0,2.885V14.936a1.358,1.358,0,0,0,1.358,1.358H14.936a1.358,1.358,0,0,0,1.357-1.358V2.885A1.357,1.357,0,0,0,14.936,1.528Zm.339,13.408a.34.34,0,0,1-.339.34H1.358a.34.34,0,0,1-.34-.34V2.885a.34.34,0,0,1,.34-.339H3.564V3.564a.509.509,0,0,0,1.018,0V2.546H7.638V3.564a.509.509,0,0,0,1.018,0V2.546h3.055V3.564a.509.509,0,1,0,1.018,0V2.546h2.207a.34.34,0,0,1,.339.339Z" fill="#3a9ced"/>
+      <rect id="Rectangle_789" data-name="Rectangle 789" width="2" height="1.5" transform="translate(3.07 5.891)" fill="#3a9ced"/>
+      <rect id="Rectangle_790" data-name="Rectangle 790" width="2" height="1.5" transform="translate(3.07 8.711)" fill="#3a9ced"/>
+      <rect id="Rectangle_791" data-name="Rectangle 791" width="2" height="1.5" transform="translate(3.07 11.532)" fill="#3a9ced"/>
+      <rect id="Rectangle_792" data-name="Rectangle 792" width="2" height="1.5" transform="translate(7.019 11.532)" fill="#3a9ced"/>
+      <rect id="Rectangle_793" data-name="Rectangle 793" width="2" height="1.5" transform="translate(7.019 8.711)" fill="#3a9ced"/>
+      <rect id="Rectangle_794" data-name="Rectangle 794" width="2" height="1.5" transform="translate(7.019 5.891)" fill="#3a9ced"/>
+      <rect id="Rectangle_795" data-name="Rectangle 795" width="2" height="1.5" transform="translate(10.968 11.532)" fill="#3a9ced"/>
+      <rect id="Rectangle_796" data-name="Rectangle 796" width="2" height="1.5" transform="translate(10.968 8.711)" fill="#3a9ced"/>
+      <rect id="Rectangle_797" data-name="Rectangle 797" width="2" height="1.5" transform="translate(10.968 5.891)" fill="#3a9ced"/>
+    </g>
+  </g>
+</svg>

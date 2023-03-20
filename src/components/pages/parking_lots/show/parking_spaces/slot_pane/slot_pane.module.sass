@@ -1,0 +1,28 @@
+@import 'src/styles/variables'
+
+.slotPane
+  height: 650px
+  overflow: auto
+
+.emptyText
+  text-align: center
+  padding: 20px
+  width: 190px
+
+.parkingSlot
+  display: flex
+  align-items: center
+  height: 40px
+  margin-bottom: 1px
+  padding: 0 30px 0 0
+  background-color: rgba($grey-med-dark, 0.58)
+  & > div:first-child
+    width: 20px
+    height: 40px
+  &-green > div:first-child
+    background-color: $green
+  &-red > div:first-child
+    background-color: $danger-color
+  & > span
+    flex: 1
+    margin-left: 15px

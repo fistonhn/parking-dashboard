@@ -1,0 +1,32 @@
+@import 'src/styles/variables'
+
+.pagination
+  display: flex
+  justify-content: center
+  padding-left: 0
+  list-style: none
+.paginationItem
+  margin-right: 4px
+  &.active > .paginationLink
+    background-color: $primary-color
+    color: white
+  &.disable
+    opacity: 0.7
+    & > .paginationLink
+      cursor: default
+.paginationLink
+  display: flex
+  align-items: center
+  justify-content: center
+  min-width: 25px
+  height: 25px
+  border-radius: 4px
+  background-color: $grey-med-dark
+  text-decoration: none !important
+  font-weight: 300
+  &:hover
+    color: $general-text-color
+.itemFirst, .itemLast
+  display: none
+.itemNext > a, .itemPrev > a
+  font-weight: bold !important

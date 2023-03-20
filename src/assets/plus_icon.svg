@@ -1,0 +1,4 @@
+<svg id="plus_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <path id="plus-symbol" d="M.542,7.638a.522.522,0,0,1-.534-.511.516.516,0,0,1,.534-.5H7.015V.511A.53.53,0,0,1,7.557,0a.522.522,0,0,1,.534.511V6.623h6.474a.523.523,0,0,1,.541.5.529.529,0,0,1-.541.511H8.091v6.112a.522.522,0,0,1-.534.511.529.529,0,0,1-.541-.511V7.638Z" transform="translate(2.443 3.268)" fill="#495259"/>
+  <rect id="Rectangle_3103" data-name="Rectangle 3103" width="20" height="20" fill="none"/>
+</svg>

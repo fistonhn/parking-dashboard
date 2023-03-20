@@ -1,0 +1,36 @@
+@import 'src/styles/variables'
+
+.table
+  width: 100%
+  font-size: 11px !important
+  text-align: left
+  & thead > tr
+    height: 35px
+    background-color: $athens-grey
+    padding: 0 20px
+    & > th
+      font-weight: normal
+  & tbody > tr
+    height: 30px
+    background-color: white
+  & tbody > tr:nth-of-type(even)
+    background-color: rgba($athens-grey, 0.33)
+  & th, td
+    padding: 0 20px
+
+.btnShowAll
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 30px
+  border: none
+  outline: none !important
+  background-color: white
+  & > span
+    font-size: 10px
+    color: $primary-color
+    margin-right: 4px
+  & path
+    stroke: $primary-color
+    fill: $primary-color

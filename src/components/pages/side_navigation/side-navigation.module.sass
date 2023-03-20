@@ -1,0 +1,111 @@
+@import 'src/styles/variables'
+
+.sideNavigation
+  flex-wrap: nowrap !important
+  width: 250px
+  top: 85px
+  height: calc(100vh - 85px)
+  z-index: 1
+  position: fixed !important
+  overflow-y: scroll
+
+  li
+    width: 100%
+    & > a
+      z-index: 2
+      padding: 20px
+      height: 55px
+  nav
+    height: 100%
+    opacity: 1
+    font-size: 16px
+    & > div:first-child
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      padding: 20px
+      & > div:first-child
+        display: flex
+        flex: 1
+        align-items: center
+    a
+      height: 100%
+      width: 100%
+      border-left: none
+      background-color: transparent
+.noScroll
+    overflow-y: scroll
+
+.transitionWidth
+  width: 100%
+  z-index: 1
+  border-top-right-radius: 10px
+  border-bottom-right-radius: 10px
+  span
+    margin: 0 auto
+    display: none
+
+.selectedSubPoint > a
+  color: #60B7FF !important
+
+@media (max-width: 1199px)
+  .svgWhiteMobile
+    path
+      fill: white
+  .activeNavbar
+    color: white
+    background-color: #3A9CED
+    width: 250px !important
+    span
+      display: flex
+      justify-content: flex-end
+      margin-left: 80px
+      ul
+        position: absolute
+        margin-left: 75px
+        top: 48px
+        left: 0
+        right: 0
+        z-index: 5
+        li
+          margin: 0 !important
+  .sideNavigation
+    width: 75px
+    background-color: #ffffff
+    height: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)
+    overflow-y: scroll
+    li
+      z-index: 5
+      & > a
+        display: flex !important
+        justify-content: center
+        align-items: center
+        margin: 0
+        height: 48px
+    nav div:first-child
+      z-index: 2
+      width: 100%
+      display: flex !important
+      justify-content: center
+      align-items: center
+      margin: 0
+      height: 48px
+  .noScroll
+    overflow-y: visible
+
+.sideNavigation::-webkit-scrollbar
+  width: 5px
+
+.sideNavigation::-webkit-scrollbar-track
+  background: #f1f1f1
+
+.sideNavigation::-webkit-scrollbar-thumb
+  background: #ccc
+
+.sideNavigation::-webkit-scrollbar-thumb:hover
+  background: #555

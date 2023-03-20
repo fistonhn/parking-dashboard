@@ -1,0 +1,94 @@
+@import 'src/styles/variables'
+
+.cameraName
+    background-color: #eff0f5
+    color: black
+    padding: 20px 30px
+.cardAdjust:nth-child(even)
+    padding-left: 0
+.cardAdjust:nth-child(odd)
+    padding-right: 0
+.dropdown
+    float: right
+.dropdown button p
+    margin-bottom: 0rem
+
+.stream
+    width: 80%
+    margin-bottom: 5%
+    height: auto
+    min-height: 300px
+.cardAdjust:nth-child(odd) .stream
+    margin-left: 10%
+
+.cardAdjust:nth-child(even) .stream
+    margin-right: 15%
+    margin-left: 5%
+.cardAdjust:nth-child(odd) .cameraName
+    padding-left: 35px
+.cardAdjust:nth-child(even) .cameraName
+    padding-left: 5%
+.live
+    background-color: #DE856C
+    color: $primary-text-color
+    position: absolute
+    top: 22%
+    font-size: 15px
+    padding: 0% 2%
+.cardAdjust:nth-child(odd) .live
+    left: 80%
+.cardAdjust:nth-child(even) .live
+    left: 75%
+
+// DropdpownMenu
+
+.dropdownmenu
+    color: $general-text-color
+.dropdownmenu:hover
+    color: $general-text-color
+    text-decoration: none
+
+//Expand camera view
+
+.modalBody
+    min-height: 768px
+    height: auto
+    width: 100%
+.modalBody  .stream
+    width: 100%
+    min-height: 600px
+    height: auto
+.modalBody  .live
+    position: absolute
+    top: 6%
+    left: 88%
+.modal-dialog
+    max-width: none !important
+// search and inut field
+
+.search
+    position: relative
+    color: $disabled-bg-color
+.search input
+    border-radius: 0.5rem
+    color: $grey-dark
+    box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.1)
+    -webkit-transition: .18s ease-out
+    -moz-transition: .18s ease-out
+    -o-transition: .18s ease-out
+    transition: .18s ease-out
+    padding-bottom: 8px
+
+.magnifier
+    position: absolute
+    left: 87%
+    top: 28%
+    color: $disabled-bg-color
+
+.search input::-webkit-input-placeholder
+    color: $disabled-bg-color
+    font-size: 16px
+    padding-bottom: 8px
+
+
+

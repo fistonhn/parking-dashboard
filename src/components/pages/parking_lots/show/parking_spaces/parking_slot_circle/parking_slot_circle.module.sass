@@ -1,0 +1,37 @@
+@import 'src/styles/variables'
+
+.pulseCircle
+  animation: pulse 1s infinite
+  border-color: rgba($primary-color, 0.6)
+  border-width: 3px
+  border-style: solid
+  animation-iteration-count: 3
+
+$pulse-0: rgba($primary-color, 0.4)
+$pulse-70: rgba($primary-color, 0)
+$pulse-100: rgba($primary-color, 0.4)
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-box-shadow: 0 0 0 0 $pulse-0
+
+  70%
+    -webkit-box-shadow: 0 0 0 15px $pulse-70
+
+  100%
+    -webkit-box-shadow: 0 0 0 0 $pulse-100
+
+@keyframes pulse
+  0%
+    -moz-box-shadow: 0 0 0 0 $pulse-0
+    box-shadow: 0 0 0 0 $pulse-0
+
+  70%
+    -moz-box-shadow: 0 0 0 15px $pulse-70
+    box-shadow: 0 0 0 15px $pulse-70
+
+  100%
+    -moz-box-shadow: 0 0 0 0 $pulse-100
+    box-shadow: 0 0 0 0 $pulse-100
+
+

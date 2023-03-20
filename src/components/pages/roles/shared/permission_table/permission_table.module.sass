@@ -1,0 +1,30 @@
+@import 'src/styles/variables'
+
+.table
+  width: 100%
+  font-size: 11px !important
+  text-align: left
+  & thead > tr
+    height: 40px
+    background-color: $grey-dark
+    padding: 0 30px
+    & > th
+      color: white
+      font-weight: normal
+      font-size: 13px
+    & > th:first-child
+      min-width: 250px
+      max-width: 250px
+  & tbody > tr
+    height: 40px
+    background-color: white
+    & > td:first-child
+      border-right: 1px solid $whisper
+  & tbody > tr:nth-of-type(even)
+    background-color: rgba($athens-grey, 0.33)
+  & th, td
+    padding: 0 30px
+    cursor: default
+
+.checkBox
+  display: inline-block

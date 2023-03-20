@@ -1,0 +1,8 @@
+<svg id="close_window_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="cancel" transform="translate(5.76 5.754)">
+    <path id="Path_27004" data-name="Path 27004" d="M5.785,6.351.125,12.012a.4.4,0,1,0,.569.569l5.7-5.7,5.7,5.7a.4.4,0,0,0,.569-.569L7.009,6.351,12.673.687A.4.4,0,0,0,12.1.117L6.4,5.824.69.117A.4.4,0,0,0,.121.687Z" transform="translate(-0.003 0.001)" fill="#394255" stroke="#394255" stroke-width="0.4"/>
+  </g>
+  <g id="edit_icon">
+    <rect id="icon_bg" width="24" height="24" fill="none"/>
+  </g>
+</svg>

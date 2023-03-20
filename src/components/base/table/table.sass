@@ -1,0 +1,65 @@
+@import 'src/styles/variables'
+
+.index-table
+  display: block
+  width: 100%
+  overflow: auto
+  max-height: calc(100vh - 220px) !important
+  font-weight: 300
+  & .sortable
+    cursor: pointer
+  & > thead
+    position: relative
+    z-index: 10
+  & thead > tr
+    width: 100%
+    position: sticky !important
+    top: 0 !important
+    background-color: $grey-dark !important
+    & th > span
+      display: flex
+      height: 50px
+      align-items: center
+      color: white !important
+      font-size: 13px !important
+      opacity: 1 !important
+      font-weight: 300
+      background-color: $grey-dark
+      padding: 0 20px
+  & tbody > tr
+    height: 45px
+    background-color: white
+    width: 70%
+  & tbody > tr:nth-of-type(even)
+    background-color: rgba($athens-grey, 0.33)
+  & th
+    position: sticky !important
+    top: 0
+  & td
+    padding: 0 20px
+.sortable
+  svg
+    font-size: 15px
+    height: 15px
+    margin-left: 4px
+
+.paginationWrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 50px
+  & > span
+    margin-right: 10px
+
+.index-table::-webkit-scrollbar
+  width: 5px
+  height: 5px
+
+.index-table::-webkit-scrollbar-track
+  background: #f1f1f1
+
+.index-table::-webkit-scrollbar-thumb
+  background: #ccc
+
+.index-table::-webkit-scrollbar-thumb:hover
+  background: #555

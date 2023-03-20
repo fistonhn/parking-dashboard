@@ -1,0 +1,32 @@
+@import 'src/styles/variables'
+
+.uploadLayout
+  margin-bottom: 15px
+  margin-right: 0px
+
+@media (min-width: 992px)
+  .uploadLayout
+    width: 200px !important
+    margin-bottom: 0px
+    margin-right: 30px
+
+.layoutDropdown
+  & > button
+    background-color: rgba($grey-dark , 0.95) !important
+    border: none !important
+    border-radius: 0
+    padding: 11px 14px
+    & > span
+      color: white
+    & > svg path
+      fill: white
+.layoutSelectedOption
+  background-color: rgba($grey-dark , 0.5) !important
+  cursor: auto !important
+  &:hover > span
+    color: $general-text-color !important
+    opacity: 0.6 !important
+
+.btnAddLayout
+  border-radius: 0
+  width: 100%

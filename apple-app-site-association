@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "65B77H2853.com.meo-app",
+        "paths": [
+          "/dashboard/violations/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [ "65B77H2853.com.meo-app" ]
+  }
+}

@@ -1,0 +1,78 @@
+@import 'src/styles/variables'
+
+.container
+  & > div
+    padding: 0 2.5%
+
+.title
+  display: flex
+  align-items: center
+  height: 50px
+  text-decoration: none !important
+  & > span
+    margin-left: 7px
+    font-size: 16px
+
+.bgGrey
+  background-color: rgba($athens-grey, 0.33)
+
+.titleWrapper
+  display: flex
+  align-items: center
+  padding-top: 10px !important
+  padding-bottom: 10px !important
+.reportTitle
+  font-size: 14px !important
+.btnDownload
+  margin-right: 10px
+
+.configRule
+  border-top: 1px solid $athens-grey
+  margin: 20px 0
+
+.btnWrapper
+  display: flex
+  align-items: center
+  padding-top: 10px !important
+  padding-bottom: 10px !important
+.toggleWrapper
+  margin-top: 20px
+
+.individualReport
+  display: flex
+  align-items: center
+  height: 40px
+  background-color: $grey-dark
+  & span
+    color: white
+    font-size: 14
+.individualRange
+  margin: 20px 0 15px
+  & > span
+    font-size: 14px
+
+@media (min-width: 992px)
+  .configRule
+    border-right: 1px solid $athens-grey
+    margin: 0 10px
+  .toggleWrapper
+    margin-top: 0
+
+@media (min-width: 1600px)
+  .pieChartWrapper
+    flex: 0 0 50% !important
+    max-width: 50% !important
+
+@-webkit-keyframes rotating
+  from
+    -webkit-transform: rotate(0deg)
+  to
+    -webkit-transform: rotate(360deg)
+@keyframes rotating
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+.rotate
+  animation: rotating 2.5s linear infinite

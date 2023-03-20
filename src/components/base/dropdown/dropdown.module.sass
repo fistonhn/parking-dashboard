@@ -1,0 +1,57 @@
+@import 'src/styles/variables'
+
+.dropdown
+  & > button
+    background-color: white !important
+    border: 1px solid rgba($snuff, 0.27)
+    box-shadow: none !important
+    & > span
+      opacity: 0.8 !important
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+  & > div
+    border: 1px solid rgba($snuff, 0.27) !important
+    border-top: none !important
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    & > button
+      padding: 12px 12px
+      & > span
+        display: block !important
+        font-weight: 300
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    & > button:hover
+      background-color: $primary-color
+      & > span
+        color: white
+        opacity: 1
+  &-sm
+    & > button
+      padding: 7.5px 12px
+      & > span
+        font-size: 12px
+    & > div > button > span
+      font-size: 12px
+  &-md
+    & > button
+      padding: 10px 14px
+      & > span
+        font-size: 13px
+    & > div > button > span
+      font-size: 13px
+
+.noneBorderBottom
+  border-bottom-left-radius: 0 !important
+  border-bottom-right-radius: 0 !important
+
+.error
+  border-color: $danger-color !important
+  background: pink !important
+
+.tooltipInfo
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap

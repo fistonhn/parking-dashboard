@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="arrow_up_icon" transform="translate(-8399 -1521) rotate(180)">
+    <rect id="Rectangle_2998" data-name="Rectangle 2998" width="24" height="24" transform="translate(-8423 -1545)" fill="#313949" opacity="0"/>
+    <g id="down-arrow" transform="translate(-8420.405 -1536.955)">
+      <path id="Path_357" data-name="Path 357" d="M23.651,33.58a.616.616,0,0,0-.871,0l-7.657,7.672L7.451,33.58a.616.616,0,1,0-.871.871l8.093,8.093a.6.6,0,0,0,.435.18.627.627,0,0,0,.435-.18l8.093-8.093A.6.6,0,0,0,23.651,33.58Z" transform="translate(-6.4 -33.4)" fill="#313949" stroke="#394255" stroke-width="0.2"/>
+    </g>
+  </g>
+</svg>

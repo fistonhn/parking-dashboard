@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="parking_lot_icon" transform="translate(8444 1440)">
+    <g id="Group_2741" data-name="Group 2741" transform="translate(-8444 -1440)">
+      <g id="Group_2740" data-name="Group 2740">
+        <path id="Path_26976" data-name="Path 26976" d="M0,0H22V22H0Z" fill="#fff" opacity="0"/>
+      </g>
+    </g>
+    <g id="parking" transform="translate(-8440 -1436)">
+      <g id="Group_2759" data-name="Group 2759">
+        <g id="Group_2758" data-name="Group 2758">
+          <path id="Path_26987" data-name="Path 26987" d="M12.558,0H1.667A1.669,1.669,0,0,0,0,1.667V12.558a1.669,1.669,0,0,0,1.667,1.667H12.558a1.669,1.669,0,0,0,1.667-1.667V1.667A1.669,1.669,0,0,0,12.558,0Zm.556,12.558a.556.556,0,0,1-.556.556H1.667a.556.556,0,0,1-.556-.556V1.667a.556.556,0,0,1,.556-.556H12.558a.556.556,0,0,1,.556.556Z" fill="#394255" stroke="#fff" stroke-width="0.3"/>
+          <path id="Path_26988" data-name="Path 26988" d="M149.89,100H146v8.669h1.111v-3.112h2.778a2.778,2.778,0,0,0,0-5.557Zm0,4.445h-2.778v-3.334h2.778a1.667,1.667,0,0,1,0,3.334Z" transform="translate(-141.944 -97.222)" fill="#394255" stroke="#fff" stroke-width="0.3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="law_enf_icon_white-active_icon" transform="translate(8444 1443)">
+    <g id="Group_2741" data-name="Group 2741" transform="translate(-8444 -1443)">
+      <g id="Group_2740" data-name="Group 2740">
+        <path id="Path_26976" data-name="Path 26976" d="M0,0H22V22H0Z" fill="#fff" opacity="0"/>
+      </g>
+    </g>
+    <g id="briefcase" transform="translate(-8440.804 -1480.835)">
+      <g id="Group_2976" data-name="Group 2976" transform="translate(0 42.666)">
+        <path id="Path_27048" data-name="Path 27048" d="M1.3,44.617H4.552v-.65a1.3,1.3,0,0,1,1.3-1.3h3.9a1.3,1.3,0,0,1,1.3,1.3v.65h3.252a1.3,1.3,0,0,1,1.3,1.3v8.455a1.3,1.3,0,0,1-1.3,1.3H1.3a1.3,1.3,0,0,1-1.3-1.3V45.918A1.3,1.3,0,0,1,1.3,44.617Zm9.1-.65a.651.651,0,0,0-.65-.65h-3.9a.651.651,0,0,0-.65.65v.65h5.2ZM.65,54.372a.651.651,0,0,0,.65.65H14.308a.651.651,0,0,0,.65-.65V49.639a1.286,1.286,0,0,1-.65.181H9.1V50.8a.325.325,0,0,1-.325.325H6.829A.325.325,0,0,1,6.5,50.8V49.82H1.3a1.285,1.285,0,0,1-.65-.181v4.733Zm7.8-3.9v-1.3h-1.3v1.3ZM.65,48.519a.651.651,0,0,0,.65.65H6.5v-.325a.325.325,0,0,1,.325-.325H8.78a.325.325,0,0,1,.325.325v.325h5.2a.651.651,0,0,0,.65-.65v-2.6a.651.651,0,0,0-.65-.65H1.3a.651.651,0,0,0-.65.65Z" transform="translate(0 -42.666)" fill="#fff" stroke="#fff" stroke-width="0.1"/>
+      </g>
+    </g>
+  </g>
+</svg>

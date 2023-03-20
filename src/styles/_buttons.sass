@@ -1,0 +1,28 @@
+@mixin disabled
+  background: $disabled-bg-color
+  color: $disabled-text-color
+@mixin primary
+  background: $primary-bg-color
+  color: $primary-text-color
+
+.btn
+  &-disabled
+    &-sm
+      @include disabled
+      font-size: $btn-font-size-sm
+    &-md
+      @include disabled
+      font-size: $btn-font-size-md
+    &-lg
+      @include disabled
+      font-size: $btn-font-size-lg
+  &-primary
+    &-sm
+      @include primary
+      font-size: $btn-font-size-sm
+    &-md
+      @include primary
+      font-size: $btn-font-size-md
+    &-lg
+      @include primary
+      font-size: $btn-font-size-lg

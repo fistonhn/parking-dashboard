@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="search_clear_icon" transform="translate(-2193.959 5824.041)">
+    <g id="clear_icon" transform="translate(2200.062 -5817.946)">
+      <path id="Path_27004" data-name="Path 27004" d="M5.474,6.01.118,11.366a.381.381,0,1,0,.538.539l5.4-5.4,5.4,5.4a.381.381,0,1,0,.538-.539L6.632,6.01,11.992.65a.381.381,0,0,0-.538-.539l-5.4,5.4L.653.111A.381.381,0,0,0,.114.65Z" transform="translate(-0.003 0.001)" fill="#394255" stroke="#394255" stroke-width="0.3"/>
+    </g>
+    <g id="edit_icon" transform="translate(2194 -5824)">
+      <rect id="icon_bg" width="24" height="24" transform="translate(-0.041 -0.041)" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+@import 'src/styles/variables'
+
+.lineChart
+  min-width: 400px
+  height: 260px
+
+.tooltip
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 2px
+  padding: 10px
+  box-shadow: 0 1px 4px rgba($loblolly, 0.34)
+  background-color: white
+  & > span
+    font-size: 10px
+    &:first-child
+      font-weight: 300
+
+@media (min-width: 1200px)
+  .lineChart
+    height: 320px
+@media (min-width: 1600px)
+  .lineChart
+    height: 450px
+@media (min-width: 1920px)
+  .lineChart
+    height: 550px

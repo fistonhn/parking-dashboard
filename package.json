@@ -1,0 +1,76 @@
+{
+  "name": "parkings-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@nivo/bar": "^0.62.0",
+    "@nivo/line": "^0.62.0",
+    "@nivo/pie": "^0.62.0",
+    "@sentry/browser": "^5.10.2",
+    "axios": "^1.2.3",
+    "bootstrap": "^4.3.1",
+    "google-maps-react": "^2.0.2",
+    "holderjs": "^2.9.6",
+    "informed": "^2.11.6",
+    "js-cookie": "^2.2.1",
+    "moment": "^2.24.0",
+    "node-sass": "^8.0.0",
+    "print-js": "^1.0.63",
+    "qs": "^6.8.0",
+    "react": "^16.8.6",
+    "react-actioncable-provider": "github:jordanhudgens/react-actioncable-provider",
+    "react-date-range": "^1.0.1",
+    "react-datepicker": "^2.8.0",
+    "react-dom": "^16.8.6",
+    "react-draggable": "^4.1.0",
+    "react-file-reader": "^1.1.4",
+    "react-js-pagination": "^3.0.2",
+    "react-player": "^1.14.2",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^5.0.1",
+    "react-select": "^3.0.4",
+    "reactstrap": "^8.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "underscore": "^1.9.1"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.js src/**/*.jsx --fix",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.0",
+    "faker": "^4.1.0"
+  }
+}

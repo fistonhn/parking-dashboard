@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="448.172" height="167" viewBox="0 0 448.172 167">
+  <g id="logo" transform="translate(-249 -57.936)">
+    <path id="Path_111" data-name="Path 111" d="M57.308.2a57.33,57.33,0,0,1,57.308,57.308c0,20.417-12,37.592-25.85,51.613l-2.1,2.1L70.628,91.946l.438-.351C79.741,82.833,89.73,70.565,89.73,57.508a32.335,32.335,0,0,0-64.669,0c0,11.129,9.9,26.9,17.438,34.613l14.02,14.108L75.184,122.7,56.432,141.631,24.711,109.559C12.093,96.941,0,75.472,0,57.421A57.312,57.312,0,0,1,57.308.2Z" transform="translate(249 70.382)" fill="#fff" fill-rule="evenodd"/>
+    <text id="SMART_PARKING" data-name="SMART
+PARKING" transform="translate(391.172 125.936)" fill="#fff" font-size="70" font-family="CoreRhino55Medium, Core Rhino"><tspan x="0" y="0">SMART</tspan><tspan x="0" y="80">PARKING</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+@import 'src/styles/variables'
+
+.title
+  text-align: center
+  padding: 20px
+  & > span
+    font-size: 16px
+.pieChart
+  display: flex
+  & > div:first-child
+    flex: 5
+  & > div:nth-child(2)
+    width: 490px
+    height: 360px
+  & > div:nth-child(3)
+    flex: 1
+  & > div:nth-child(5)
+    flex: 5
+.legend
+  display: flex
+  flex-direction: column
+  max-width: 180px
+  padding: 10px 5px 20px 10px
+  & > span
+    opacity: 0.5
+.legendItem
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  & > div
+    width: 16px
+    height: 16px
+    margin-right: 15px
+    background-color: black
+  & > span
+    flex: 1
+    opacity: 0.9
+
+.total
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  & > span:first-child
+    margin-right: 3px
+    font-size: 13px
+    font-weight: 300
+  & > span:nth-child(2)
+    font-size: 18px
+    opacity: 0.9
